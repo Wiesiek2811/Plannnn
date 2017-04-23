@@ -27,44 +27,10 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript">
-  jQuery(document).ready(function($){
 
-    var panels = $('.accordion > dd').hide();
 
-    panels.first().show();
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us15.list-manage.com","uuid":"e6ae3a40f71e167da17b47e94","lid":"41e5641489"}) })</script>
 
-    $('.accordion > dt > a').click(function() {
-      var $this = $(this);
-
-      panels.slideUp();
-
-      $this.parent().next().slideDown();
-
-      var list = [
-        "Make your own ice cream",
-        "Go to a shop buy three flowers and give it to random people",
-        "Bike to the next town, sit down in the park and read a book",
-        "Keep a dream diary and try to lucid dream",
-        "Get a camera and take photos of your town/friends and put them in your wall",
-        "Sign up to be a volunteer",
-        "Make a time capsule and bury it, but write down where it is",
-        "Get all your friends together, prepare a night with photos together film",
-        "Go to a karaoke bar",
-        "Go on wine tasting",
-        "Call a relative you havent had contact with in a while and arrange to meet them",
-        "Go camping to a local lake",
-        "Go to the nearest lake and watch the sunrise"
-      ];
-      var random = Math.floor(Math.random() * list.length);
-      var rndelement = list[random];
-      $('body > div.down > div.accor > dl > dd:nth-child(4)').text(rndelement);
-
-      return false;
-    });
-  });
-</script>
 
 </head>
 
